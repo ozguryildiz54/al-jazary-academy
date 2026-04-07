@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pêwendanî - Al Jazary Academy</title>
+    <meta name="description" content="Contact Al Jazary Academy. Get in touch with us.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-envelope"></i> info@aljazaryacademy.org</span>
+                <span><i class="fas fa-phone"></i> +1 (669) 282-7176</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="ku">Kurdî</button>
+                    <button class="lang-btn" data-lang="en">English</button>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <div class="header-inner">
+                <a href="../index.html" class="logo">
+                    <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="logo-text">
+                        <span class="logo-name">Al Jazary</span>
+                        <span class="logo-sub">Academy</span>
+                    </div>
+                </a>
+                <nav class="main-nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="../index.html">Serrûpel</a></li>
+                        <li><a href="about.html">Der Barê</a></li>
+                        <li class="has-dropdown">
+                            <a href="schools.html">Dibistan <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="schools.html#language">Dibistana Zimanan</a></li>
+                                <li><a href="schools.html#history">Dibistana Dîrok û Erdîgrafya</a></li>
+                                <li><a href="schools.html#tech">Dibistana Teknolojîyê</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="history.html">Dîroka Kurd</a></li>
+                        <li><a href="contact.html" class="active">Pêwendanî</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="donate.html" class="btn btn-donate"><i class="fas fa-heart"></i> Bexşîn</a>
+                    <a href="#" class="btn btn-login"><i class="fas fa-sign-in-alt"></i> Têketin</a>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Pêwendanî</h1>
+            <p>Bi me re têkilî deynin - Em amade ne ku alîkarîya we bikin</p>
+            <div class="breadcrumb">
+                <a href="../index.html">Serrûpel</a>
+                <span>/</span>
+                <span>Pêwendanî</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                <!-- Contact Form -->
+                <div class="content-card">
+                    <h2 style="font-size: 1.5rem; margin-bottom: 8px;">Peyamek Ji Me Re Bişînin</h2>
+                    <p style="color: var(--gray-500); margin-bottom: 24px;">Pirsên xwe, pêşniyar an jî serîlêdanê bişînin.</p>
+
+                    <form id="contactForm">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                            <div class="form-group">
+                                <label>Nav *</label>
+                                <input type="text" placeholder="Navê xwe" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Paşnav *</label>
+                                <input type="text" placeholder="Paşnavê xwe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail *</label>
+                            <input type="email" placeholder="email@nimûne.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Telefon</label>
+                            <input type="tel" placeholder="+1 (xxx) xxx-xxxx">
+                        </div>
+                        <div class="form-group">
+                            <label>Mijar *</label>
+                            <select required>
+                                <option value="">Mijarekê hilbijêrin...</option>
+                                <option value="registration">Tomarkirin / Qeydkirin</option>
+                                <option value="volunteer">Dilxwazî / Volunteer</option>
+                                <option value="teaching">Mamostetî / Teaching</option>
+                                <option value="donation">Bexşîn / Donation</option>
+                                <option value="partnership">Hevkarî / Partnership</option>
+                                <option value="other">Yên Din / Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Peyam *</label>
+                            <textarea placeholder="Peyama xwe li vir binivîsin..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Peyamê Bişîne
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <div class="content-card" style="margin-bottom: 24px;">
+                        <h3 style="margin-bottom: 20px;">Agahîyên Pêwendanîyê</h3>
+                        <div style="margin-bottom: 20px; display: flex; gap: 16px; align-items: start;">
+                            <div style="width: 44px; height: 44px; background: rgba(25,125,125,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-envelope" style="color: var(--primary);"></i>
+                            </div>
+                            <div>
+                                <p style="font-weight: 700; margin-bottom: 2px;">E-mail</p>
+                                <p style="color: var(--gray-500); font-size: 0.92rem;">info@aljazaryacademy.org</p>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 20px; display: flex; gap: 16px; align-items: start;">
+                            <div style="width: 44px; height: 44px; background: rgba(25,125,125,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-phone" style="color: var(--primary);"></i>
+                            </div>
+                            <div>
+                                <p style="font-weight: 700; margin-bottom: 2px;">Telefon</p>
+                                <p style="color: var(--gray-500); font-size: 0.92rem;">+1 (669) 282-7176</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 16px; align-items: start;">
+                            <div style="width: 44px; height: 44px; background: rgba(25,125,125,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--primary);"></i>
+                            </div>
+                            <div>
+                                <p style="font-weight: 700; margin-bottom: 2px;">Cih</p>
+                                <p style="color: var(--gray-500); font-size: 0.92rem;">United States of America</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card" style="margin-bottom: 24px;">
+                        <h3 style="margin-bottom: 16px;">Medyaya Civakî</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                            <a href="#" style="display: flex; align-items: center; gap: 10px; padding: 12px; background: var(--gray-50); border-radius: var(--radius-sm); transition: all 0.3s;">
+                                <i class="fab fa-youtube" style="font-size: 1.3rem; color: #ff0000;"></i>
+                                <span style="font-weight: 600; font-size: 0.88rem;">YouTube</span>
+                            </a>
+                            <a href="#" style="display: flex; align-items: center; gap: 10px; padding: 12px; background: var(--gray-50); border-radius: var(--radius-sm); transition: all 0.3s;">
+                                <i class="fab fa-instagram" style="font-size: 1.3rem; color: #e4405f;"></i>
+                                <span style="font-weight: 600; font-size: 0.88rem;">Instagram</span>
+                            </a>
+                            <a href="#" style="display: flex; align-items: center; gap: 10px; padding: 12px; background: var(--gray-50); border-radius: var(--radius-sm); transition: all 0.3s;">
+                                <i class="fab fa-facebook-f" style="font-size: 1.3rem; color: #1877f2;"></i>
+                                <span style="font-weight: 600; font-size: 0.88rem;">Facebook</span>
+                            </a>
+                            <a href="#" style="display: flex; align-items: center; gap: 10px; padding: 12px; background: var(--gray-50); border-radius: var(--radius-sm); transition: all 0.3s;">
+                                <i class="fab fa-telegram-plane" style="font-size: 1.3rem; color: #0088cc;"></i>
+                                <span style="font-weight: 600; font-size: 0.88rem;">Telegram</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="content-card" style="background: var(--gray-50);">
+                        <h3 style="margin-bottom: 12px;">Demên Xebatê</h3>
+                        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--gray-200);">
+                            <span style="font-weight: 600; font-size: 0.9rem;">Duşem - Înî</span>
+                            <span style="color: var(--gray-500); font-size: 0.9rem;">9:00 - 21:00 EST</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--gray-200);">
+                            <span style="font-weight: 600; font-size: 0.9rem;">Şemî</span>
+                            <span style="color: var(--gray-500); font-size: 0.9rem;">10:00 - 18:00 EST</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 8px 0;">
+                            <span style="font-weight: 600; font-size: 0.9rem;">Yekşem</span>
+                            <span style="color: var(--accent); font-size: 0.9rem;">Girtî</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="logo-text">
+                            <span class="logo-name">Al Jazary</span>
+                            <span class="logo-sub">Academy</span>
+                        </div>
+                    </div>
+                    <p>Akademiya Kurdî ya serhêl û belaş ji bo Kurdanên li seranserê cîhanê.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Lînkên Bilez</h4>
+                    <ul>
+                        <li><a href="../index.html">Serrûpel</a></li>
+                        <li><a href="about.html">Der Barê</a></li>
+                        <li><a href="schools.html">Dibistan</a></li>
+                        <li><a href="history.html">Dîroka Kurd</a></li>
+                        <li><a href="donate.html">Bexşîn</a></li>
+                        <li><a href="contact.html">Pêwendanî</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dibistan</h4>
+                    <ul>
+                        <li><a href="schools.html#language">Dibistana Zimanan</a></li>
+                        <li><a href="schools.html#history">Dibistana Dîrok û Erdîgrafya</a></li>
+                        <li><a href="schools.html#tech">Dibistana Teknolojîyê</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Pêwendanî</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope"></i> info@aljazaryacademy.org</li>
+                        <li><i class="fas fa-phone"></i> +1 (669) 282-7176</li>
+                        <li><i class="fas fa-map-marker-alt"></i> United States</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Al Jazary Academy. Hemû maf parastî ne.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="../js/main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Spas! Peyama we hat şandin. / Thank you! Your message has been sent.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

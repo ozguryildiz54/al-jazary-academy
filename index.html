@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Jazary Academy - Akademiya Kurd&icirc; ya Serhêl</title>
+    <meta name="description" content="Al Jazary Academy - Free online Kurdish education. Kurdish language, history, geography and technology courses for all ages.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-envelope"></i> info@aljazaryacademy.org</span>
+                <span><i class="fas fa-phone"></i> +1 (669) 282-7176</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="ku">Kurd&icirc;</button>
+                    <button class="lang-btn" data-lang="en">English</button>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-name">Al Jazary</span>
+                        <span class="logo-sub">Academy</span>
+                    </div>
+                </a>
+
+                <nav class="main-nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="active">Serr&ucirc;pel</a></li>
+                        <li><a href="pages/about.html">Der Bar&ecirc;</a></li>
+                        <li class="has-dropdown">
+                            <a href="pages/schools.html">Dibistan <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="pages/schools.html#language">Dibistana Zimanan</a></li>
+                                <li><a href="pages/schools.html#history">Dibistana D&icirc;rok &ucirc; Erd&icirc;grafya</a></li>
+                                <li><a href="pages/schools.html#tech">Dibistana Teknoloj&icirc;y&ecirc;</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pages/history.html">D&icirc;roka Kurd</a></li>
+                        <li><a href="pages/contact.html">P&ecirc;wendan&icirc;</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <a href="pages/donate.html" class="btn btn-donate"><i class="fas fa-heart"></i> Bexşîn</a>
+                    <a href="#" class="btn btn-login"><i class="fas fa-sign-in-alt"></i> T&ecirc;ketin</a>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Al Jazary Academy</h1>
+                <p class="hero-subtitle">Akademiya Kurd&icirc; ya Serhêl &ucirc; Belaş</p>
+                <p class="hero-desc">Ji bo Kurdan&ecirc;n li seranser&ecirc; cîhan&ecirc; - P&ecirc;rwirdehiya ziman, d&icirc;rok, erd&icirc;grafya &ucirc; teknoloj&icirc;y&ecirc;</p>
+                <div class="hero-buttons">
+                    <a href="pages/schools.html" class="btn btn-primary btn-lg">Dersan Bibîne</a>
+                    <a href="pages/about.html" class="btn btn-outline btn-lg">Bêtir Hîn Bibe</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Dibistan</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Komên Temen</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Belaş</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="section about-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Der Bar&ecirc; Me</span>
+                <h2>Em K&icirc; Ne?</h2>
+                <p>Al Jazary Academy sazûmanek perwerdehîyê ya serhêl e ku bi gavên biçûk dest pê dike û bi demê re mezin dibe.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Armanc</h3>
+                    <p>Hînkirina zimanê Kurdî û parvekirin a zanîna dîrok û çanda Kurd bi rêbazên modern ên perwerdehîyê.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3>Dîtinî</h3>
+                    <p>Bûyîna sazûmaneke perwerdehîyê ya hîbrîd (serhêl + fizîkî) ku ji Kurdanên li seranserê cîhanê re xizmetê dike.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-users"></i></div>
+                    <h3>Ji bo Kî?</h3>
+                    <p>Ji bo hemû Kurdanên li cîhanê - ji zarokan heta mezinan, ji destpêkeran heta pisporên perwerdehîyê.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schools Section -->
+    <section class="section schools-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Dibistanên Me</span>
+                <h2>Beşên Perwerdehîyê</h2>
+                <p>Al Jazary Academy ji sê dibistanên sereke pêk tê ku her yek di warê xwe de pispor e.</p>
+            </div>
+            <div class="schools-grid">
+                <!-- Language School -->
+                <div class="school-card">
+                    <div class="school-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Dibistana Zimanan</h3>
+                    <p>Hînkirina Kurmancî, Soranî, Zazakî, Îngilîzî û zimanên din.</p>
+                    <ul class="school-features">
+                        <li><i class="fas fa-check"></i> Kurmancî (Destpêk)</li>
+                        <li><i class="fas fa-check"></i> Soranî (Di pêşeroj de)</li>
+                        <li><i class="fas fa-check"></i> Zazakî (Di pêşeroj de)</li>
+                        <li><i class="fas fa-check"></i> Îngilîzî</li>
+                    </ul>
+                    <a href="pages/schools.html#language" class="btn btn-secondary">Bêtir Fêr Bibe</a>
+                </div>
+
+                <!-- History School -->
+                <div class="school-card featured">
+                    <div class="school-badge">Nû Destpêkir</div>
+                    <div class="school-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Dibistana Dîrok û Erdîgrafya</h3>
+                    <p>Dîroka Kurd, erdîgrafyaya Kurd û dîroka cîhanê ji perspektîfa Kurd.</p>
+                    <ul class="school-features">
+                        <li><i class="fas fa-check"></i> Dîroka Kurd</li>
+                        <li><i class="fas fa-check"></i> Erdîgrafyaya Kurd</li>
+                        <li><i class="fas fa-check"></i> Dîroka Cîhanê</li>
+                        <li><i class="fas fa-check"></i> 4 Komên Temen</li>
+                    </ul>
+                    <a href="pages/schools.html#history" class="btn btn-primary">Bêtir Fêr Bibe</a>
+                </div>
+
+                <!-- Tech School -->
+                <div class="school-card">
+                    <div class="school-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Dibistana Teknolojîyê</h3>
+                    <p>Perwerdehîya komputer, IT û bernamesazî (coding).</p>
+                    <ul class="school-features">
+                        <li><i class="fas fa-check"></i> Komputer</li>
+                        <li><i class="fas fa-check"></i> IT</li>
+                        <li><i class="fas fa-check"></i> Bernamesazî</li>
+                        <li><i class="fas fa-check"></i> Zanistên Dîjîtal</li>
+                    </ul>
+                    <a href="pages/schools.html#tech" class="btn btn-secondary">Bêtir Fêr Bibe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Age Groups Section -->
+    <section class="section age-groups">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Komên Temen</span>
+                <h2>Ji bo Hemû Temanan</h2>
+                <p>Müfredatên me ji bo her komeke temenê cûda hatine amadekirin.</p>
+            </div>
+            <div class="age-grid">
+                <div class="age-card">
+                    <div class="age-range">7-10</div>
+                    <h3>Zarok</h3>
+                    <p>Dersên bi lîstik û çalakîyan, hînkirina bi awayê xweş û balkêş.</p>
+                </div>
+                <div class="age-card">
+                    <div class="age-range">11-15</div>
+                    <h3>Ciwan</h3>
+                    <p>Naverokên kûrtir, projeyên lêkolînê û xebatên komî.</p>
+                </div>
+                <div class="age-card">
+                    <div class="age-range">16-20</div>
+                    <h3>Ciwanên Mezin</h3>
+                    <p>Dersên akademîk, analîzên dîrokî û projeyên teknolojîk.</p>
+                </div>
+                <div class="age-card">
+                    <div class="age-range">20+</div>
+                    <h3>Mezinan</h3>
+                    <p>Dersên pispor, semîner û bername yên perwerdehîyê yên pêşketî.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcements Section -->
+    <section class="section announcements">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Duyuru</span>
+                <h2>Ragihandin û Nûçe</h2>
+                <p>Ragihadin û nûçeyên herî dawî yên Al Jazary Academy.</p>
+            </div>
+            <div class="announcements-grid">
+                <div class="announcement-card">
+                    <div class="announcement-date">
+                        <span class="day">07</span>
+                        <span class="month">Nîsan 2026</span>
+                    </div>
+                    <div class="announcement-content">
+                        <span class="announcement-tag">Tomarkirin</span>
+                        <h3>Tomarkirina Dersên Nû Destpêkir!</h3>
+                        <p>Dersên Kurmancî û Dîroka Kurd ji bo hemû komên temen vebûne. Niha tomar bibin!</p>
+                        <a href="#" class="read-more">Bêtir bixwîne <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="announcement-card">
+                    <div class="announcement-date">
+                        <span class="day">01</span>
+                        <span class="month">Nîsan 2026</span>
+                    </div>
+                    <div class="announcement-content">
+                        <span class="announcement-tag">Pozîsyon</span>
+                        <h3>Berpirsiyarê Beşa Dîrok û Erdîgrafya Tê Xwestin</h3>
+                        <p>Em li kes/a ku di warê dîrok û erdîgrafyaya Kurd de pispor be digerin.</p>
+                        <a href="#" class="read-more">Bêtir bixwîne <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="announcement-card">
+                    <div class="announcement-date">
+                        <span class="day">25</span>
+                        <span class="month">Adar 2026</span>
+                    </div>
+                    <div class="announcement-content">
+                        <span class="announcement-tag">Bexşîn</span>
+                        <h3>Kampanyaya Bexşînê - Piştgirîya Perwerdehîyê</h3>
+                        <p>Bi bexşîna xwe piştgirîya perwerdehîya Kurdî bikin. Her mîqdar girîng e!</p>
+                        <a href="pages/donate.html" class="read-more">Bêtir bixwîne <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Donate Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Piştgirîya Perwerdehîya Kurdî Bikin</h2>
+                <p>Al Jazary Academy bi bexşînên we dijî. Bi piştgirîya xwe bibin beşek ji vê tevgerê.</p>
+                <div class="cta-buttons">
+                    <a href="pages/donate.html" class="btn btn-donate btn-lg"><i class="fas fa-heart"></i> Niha Bexşîn Bikin</a>
+                    <a href="pages/contact.html" class="btn btn-outline btn-lg">Têkilî Deynin</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter">
+        <div class="container">
+            <div class="newsletter-inner">
+                <div class="newsletter-text">
+                    <h3>Bi Nûçeyan Bimînin</h3>
+                    <p>E-maila xwe binivîsin da ku nûçe û ragihaindinên me bistînin.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="E-maila xwe binivîsin..." required>
+                    <button type="submit" class="btn btn-primary">Tomar Bibe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="logo-text">
+                            <span class="logo-name">Al Jazary</span>
+                            <span class="logo-sub">Academy</span>
+                        </div>
+                    </div>
+                    <p>Akademiya Kurdî ya serhêl û belaş ji bo Kurdanên li seranserê cîhanê.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Lînkên Bilez</h4>
+                    <ul>
+                        <li><a href="index.html">Serrûpel</a></li>
+                        <li><a href="pages/about.html">Der Barê</a></li>
+                        <li><a href="pages/schools.html">Dibistan</a></li>
+                        <li><a href="pages/history.html">Dîroka Kurd</a></li>
+                        <li><a href="pages/donate.html">Bexşîn</a></li>
+                        <li><a href="pages/contact.html">Pêwendanî</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dibistan</h4>
+                    <ul>
+                        <li><a href="pages/schools.html#language">Dibistana Zimanan</a></li>
+                        <li><a href="pages/schools.html#history">Dibistana Dîrok û Erdîgrafya</a></li>
+                        <li><a href="pages/schools.html#tech">Dibistana Teknolojîyê</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Pêwendanî</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope"></i> info@aljazaryacademy.org</li>
+                        <li><i class="fas fa-phone"></i> +1 (669) 282-7176</li>
+                        <li><i class="fas fa-map-marker-alt"></i> United States</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Al Jazary Academy. Hemû maf parastî ne.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

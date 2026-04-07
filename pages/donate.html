@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bexşîn - Al Jazary Academy</title>
+    <meta name="description" content="Support Kurdish education. Donate to Al Jazary Academy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-envelope"></i> info@aljazaryacademy.org</span>
+                <span><i class="fas fa-phone"></i> +1 (669) 282-7176</span>
+            </div>
+            <div class="top-bar-right">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="ku">Kurdî</button>
+                    <button class="lang-btn" data-lang="en">English</button>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <div class="header-inner">
+                <a href="../index.html" class="logo">
+                    <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="logo-text">
+                        <span class="logo-name">Al Jazary</span>
+                        <span class="logo-sub">Academy</span>
+                    </div>
+                </a>
+                <nav class="main-nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="../index.html">Serrûpel</a></li>
+                        <li><a href="about.html">Der Barê</a></li>
+                        <li class="has-dropdown">
+                            <a href="schools.html">Dibistan <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="schools.html#language">Dibistana Zimanan</a></li>
+                                <li><a href="schools.html#history">Dibistana Dîrok û Erdîgrafya</a></li>
+                                <li><a href="schools.html#tech">Dibistana Teknolojîyê</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="history.html">Dîroka Kurd</a></li>
+                        <li><a href="contact.html">Pêwendanî</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="donate.html" class="btn btn-donate active"><i class="fas fa-heart"></i> Bexşîn</a>
+                    <a href="#" class="btn btn-login"><i class="fas fa-sign-in-alt"></i> Têketin</a>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background: linear-gradient(135deg, #8b1a1a, var(--accent));">
+        <div class="container">
+            <h1><i class="fas fa-heart"></i> Bexşîn</h1>
+            <p>Piştgirîya perwerdehîya Kurdî bikin - Her mîqdar girîng e</p>
+            <div class="breadcrumb">
+                <a href="../index.html">Serrûpel</a>
+                <span>/</span>
+                <span>Bexşîn</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Content -->
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: start;">
+                <!-- Donate Form -->
+                <div class="content-card">
+                    <h2 style="font-size: 1.6rem; margin-bottom: 8px;">Niha Bexşîn Bikin</h2>
+                    <p style="color: var(--gray-500); margin-bottom: 24px;">Bi bexşîna xwe em dikarin perwerdehîya Kurdî berdewam bikin.</p>
+
+                    <h3 style="font-size: 1rem; margin-bottom: 12px; color: var(--gray-600);">Mîqdara Bexşînê Hilbijêrin</h3>
+                    <div class="donate-options" id="donateOptions">
+                        <div class="donate-amount" data-amount="10">$10</div>
+                        <div class="donate-amount" data-amount="25">$25</div>
+                        <div class="donate-amount selected" data-amount="50">$50</div>
+                        <div class="donate-amount" data-amount="100">$100</div>
+                        <div class="donate-amount" data-amount="250">$250</div>
+                        <div class="donate-amount" data-amount="500">$500</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>An jî mîqdara xwe binivîsin</label>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 1.3rem; font-weight: 700; color: var(--gray-400);">$</span>
+                            <input type="number" id="customAmount" placeholder="Mîqdara din..." min="1">
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 24px;">
+                        <label>Celeb</label>
+                        <div style="display: flex; gap: 12px;">
+                            <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-weight: 400;">
+                                <input type="radio" name="donationType" value="once" checked> Carekê
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 6px; cursor: pointer; font-weight: 400;">
+                                <input type="radio" name="donationType" value="monthly"> Mehane
+                            </label>
+                        </div>
+                    </div>
+
+                    <h3 style="font-size: 1rem; margin-bottom: 12px; color: var(--gray-600);">Agahîyên Kesane</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                        <div class="form-group">
+                            <label>Nav</label>
+                            <input type="text" placeholder="Navê xwe">
+                        </div>
+                        <div class="form-group">
+                            <label>Paşnav</label>
+                            <input type="text" placeholder="Paşnavê xwe">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" placeholder="email@nimûne.com">
+                    </div>
+
+                    <div style="padding: 16px; background: #fff3e0; border-radius: var(--radius-md); margin-bottom: 24px;">
+                        <p style="font-size: 0.85rem; color: #e65100;"><i class="fas fa-info-circle"></i> Dema ku hûn bexşînê bikin, em ê we bi e-mailê agahdar bikin. Agahîyên we ewle ne.</p>
+                    </div>
+
+                    <button class="btn btn-donate btn-lg" style="width: 100; justify-content: center;" onclick="alert('Spas ji bo bexşîna we! / Thank you for your donation! - Payment integration coming soon.')">
+                        <i class="fas fa-heart"></i> Bexşîn Bikin
+                    </button>
+
+                    <div style="margin-top: 16px; text-align: center;">
+                        <p style="font-size: 0.82rem; color: var(--gray-400);">
+                            <i class="fas fa-lock"></i> Hemû danûstandin bi ewlehî têne kirin.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Info Side -->
+                <div>
+                    <div class="content-card" style="background: linear-gradient(135deg, var(--primary-dark), var(--primary)); color: var(--white); margin-bottom: 24px;">
+                        <h3 style="margin-bottom: 16px;">Bexşîna We Çi Dike?</h3>
+                        <ul style="list-style: none;">
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px; align-items: start;">
+                                <i class="fas fa-check-circle" style="margin-top: 4px; color: var(--teal-bg);"></i>
+                                <span><strong>$10</strong> - Yek xwendekar ji bo mehekê materyalên dersê peyda dike</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px; align-items: start;">
+                                <i class="fas fa-check-circle" style="margin-top: 4px; color: var(--teal-bg);"></i>
+                                <span><strong>$25</strong> - Amadekirina materyalên dersê yên nû piştgirî dike</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px; align-items: start;">
+                                <i class="fas fa-check-circle" style="margin-top: 4px; color: var(--teal-bg);"></i>
+                                <span><strong>$50</strong> - Lêçûnên platformê yên mehane piştgirî dike</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px; align-items: start;">
+                                <i class="fas fa-check-circle" style="margin-top: 4px; color: var(--teal-bg);"></i>
+                                <span><strong>$100</strong> - Derseke nû ya bêkêmasî tê amadekirin</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; align-items: start;">
+                                <i class="fas fa-check-circle" style="margin-top: 4px; color: var(--teal-bg);"></i>
+                                <span><strong>$250+</strong> - Beşeke nû ya perwerdehîyê bi fondan piştgirî dike</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h3 style="margin-bottom: 12px; color: var(--primary);">Rêyên Din ên Bexşînê</h3>
+                        <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--gray-200);">
+                            <p style="font-weight: 700; margin-bottom: 4px;"><i class="fab fa-paypal" style="color: #003087;"></i> PayPal</p>
+                            <p style="font-size: 0.88rem; color: var(--gray-500);">donate@aljazaryacademy.org</p>
+                        </div>
+                        <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--gray-200);">
+                            <p style="font-weight: 700; margin-bottom: 4px;"><i class="fas fa-mobile-alt" style="color: #00d632;"></i> Zelle</p>
+                            <p style="font-size: 0.88rem; color: var(--gray-500);">+1 (669) 282-7176</p>
+                        </div>
+                        <div>
+                            <p style="font-weight: 700; margin-bottom: 4px;"><i class="fab fa-bitcoin" style="color: #f7931a;"></i> GoFundMe</p>
+                            <p style="font-size: 0.88rem; color: var(--gray-500);">Zû tê (Coming Soon)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="logo-text">
+                            <span class="logo-name">Al Jazary</span>
+                            <span class="logo-sub">Academy</span>
+                        </div>
+                    </div>
+                    <p>Akademiya Kurdî ya serhêl û belaş ji bo Kurdanên li seranserê cîhanê.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Lînkên Bilez</h4>
+                    <ul>
+                        <li><a href="../index.html">Serrûpel</a></li>
+                        <li><a href="about.html">Der Barê</a></li>
+                        <li><a href="schools.html">Dibistan</a></li>
+                        <li><a href="history.html">Dîroka Kurd</a></li>
+                        <li><a href="donate.html">Bexşîn</a></li>
+                        <li><a href="contact.html">Pêwendanî</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dibistan</h4>
+                    <ul>
+                        <li><a href="schools.html#language">Dibistana Zimanan</a></li>
+                        <li><a href="schools.html#history">Dibistana Dîrok û Erdîgrafya</a></li>
+                        <li><a href="schools.html#tech">Dibistana Teknolojîyê</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Pêwendanî</h4>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope"></i> info@aljazaryacademy.org</li>
+                        <li><i class="fas fa-phone"></i> +1 (669) 282-7176</li>
+                        <li><i class="fas fa-map-marker-alt"></i> United States</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Al Jazary Academy. Hemû maf parastî ne.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="../js/main.js"></script>
+    <script>
+        // Donate amount selection
+        document.querySelectorAll('.donate-amount').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.donate-amount').forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+                document.getElementById('customAmount').value = '';
+            });
+        });
+        document.getElementById('customAmount').addEventListener('input', () => {
+            document.querySelectorAll('.donate-amount').forEach(b => b.classList.remove('selected'));
+        });
+    </script>
+</body>
+</html>
