@@ -1,0 +1,33 @@
+# Local Netlify folder
+.netlify
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Environment & secrets
+.env
+.env.*
+*.key
+*.pem
+secrets.*
+
+# SSH helpers that contain plaintext credentials — do NOT commit
+scripts/ssh_helper.py
+scripts/ssh_sftp.py
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local backups & dumps
+*.bak
+*.backup
+*.sql.gz
+backups/
